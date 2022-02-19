@@ -10,7 +10,51 @@
     padding-bottom: 39px;
     padding-top: 125px;
   }
+
+  @media screen and (max-width: 767px){
+
+        background: url(/images/about/about_background-milk-mob-min_left-part@1x.png) left,
+        url(/images/about/about_background-milk-mob-min_right-part@1x.png) right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: $secondary-bg-color;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+
+            background: url(/images/about/about_background-milk-mob-min_left-part@2x.png) left,
+            url(/images/about/about_background-milk-mob-min_right-part@2x.png) right;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: $secondary-bg-color;
+        }
+  }
+
+  @media screen and (min-width: 1280px){
+
+        background: url(/images/about/about_background-milk-desk-min_left-part@1x.png) left,
+          url(/images/about/about_background-milk-desk-min_right-part@1x.png) right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: $secondary-bg-color;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+
+            background: url(/images/about/about_background-milk-desk-min_left-part@2x.png) left,
+            url(/images/about/about_background-milk-desk-min_right-part@2x.png) right;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: $secondary-bg-color;
+
+        }
+  }
 }
+
+
+
 .container {
   padding-left: 0px;
   padding-right: 0px;
@@ -27,6 +71,7 @@
   color: $secondary-title-color;
   padding-bottom: 15px;
 }
+
 .about-title {
   padding-bottom: 106px;
   font-family: Titan One;
@@ -39,44 +84,46 @@
   text-transform: uppercase;
   color: #D41443;
 }
+
 .about-box {
   display: flex;
   position: relative;
 }
-.overlay {
-  // position: relative;
-  // min-height: 100vh;
-  max-width: 100%;
-  // max-height: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: 
-    url("../images/milk-mob-1x-min.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      background-image: 
-    url("../images/milk-mob-2x-min.png");
-    }
-  @media screen and (min-width: 768px) {
+// .overlay {
+//   // position: relative;
+//   // min-height: 100vh;
+//   max-width: 100%;
+//   // max-height: 400px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   background-image: 
+//     url("../images/milk-mob-1x-min.png");
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   @media (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//       background-image: 
+//     url("../images/milk-mob-2x-min.png");
+//     }
+//   @media screen and (min-width: 768px) {
     
-  }
-  @media screen and (min-width: 1200px) {
-    max-width: 1600px;
-    // max-height: 600px;
-    background-image: 
-      url("../images/milk-des-1x-min.png");
-      @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-        background-image: 
-      url("../images/milk-des-2x-min.png");
-      }
-  }
-}
+//   }
+//   @media screen and (min-width: 1200px) {
+//     max-width: 1600px;
+//     // max-height: 600px;
+//     background-image: 
+//       url("../images/milk-des-1x-min.png");
+//       @media (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//         background-image: 
+//       url("../images/milk-des-2x-min.png");
+//       }
+//     }
+//   }
+
 .about-img {
   top: -47px;
   position: absolute;
