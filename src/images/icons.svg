@@ -12,7 +12,7 @@
         <symbol id="icon-home" viewBox="0 0 32 32">
             <path fill="#d31342" style="fill: var(--color2, #d31342)" d="M31.508 15.754c0.738-0.738 0.492-1.723 0-2.215l-13.538-11.815c-0.313-0.319-0.749-0.517-1.231-0.517s-0.918 0.198-1.23 0.517l-0 0-13.538 12.308c-0.492 0.738-0.738 1.723 0 2.462h0.246c0.492 0.738 1.477 0.738 1.969 0.246l1.231-0.985v13.538c0 0.738 0.492 1.477 1.477 1.477h5.169c0.985 0 1.477-0.738 1.477-1.477v-9.354h6.892v9.354c0 0.738 0.492 1.477 1.477 1.477h5.662c0.738 0 1.477-0.738 1.477-1.477v-13.292l0.492 0.738c0.492 0 1.231 0 1.723-0.738l0.246-0.246z"></path>
         </symbol>
-        <symbol id="icon-Burger" viewBox="0 0 32 32">
+        <symbol id="icon-burger" viewBox="0 0 32 32">
             <path fill="none" stroke="#d41443" style="stroke: var(--color3, #d41443)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.6" d="M0 6.4h32M0 16h32M0 25.6h32"></path>
         </symbol>
         <symbol id="icon-close" viewBox="0 0 32 32">
