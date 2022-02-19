@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+}   
+
+.link {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}   
+
+.list {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
