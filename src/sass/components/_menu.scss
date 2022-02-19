@@ -1,0 +1,75 @@
+.menu-close {
+  width: 14px;
+  height: 14px;
+
+  background: $bg-color;
+
+  border-radius: 50%;
+  position: absolute;
+  right: 28px;
+  top: 23px;
+  cursor: pointer;
+}
+
+// .menu-close-icon {
+
+// }
+
+.mob-menu {
+  position: fixed;
+  background-color: #e17992;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 502px;
+
+  padding-top: 60px;
+  @media screen and (min-width: 768px) {
+    width: 254px;
+    height: 100%;
+  }
+}
+
+.menu-button {
+  background: $bg-color;
+  border-radius: 22px;
+  width: 209px;
+  height: 44px;
+  display: block;
+  margin: 0 auto;
+  font-family: DM Sans;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+  color: $accent-color;
+  @media screen and (min-width: 768px) {
+    width: 186px;
+  }
+}
+
+.menu-list {
+  margin-top: 19px;
+  padding-left: 21px;
+  @media screen and (min-width: 768px) {
+    padding-left: 24px;
+  }
+}
+
+.menu-list__item {
+  border: 1px solid #e18298;
+  padding-top: 11px;
+  padding-bottom: 12px;
+  &:hover,
+  :focus {
+    color: $accent-color;
+  }
+}
+
+.menu-list__link {
+  font-family: DM Sans;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: $white-text-color;
+}
