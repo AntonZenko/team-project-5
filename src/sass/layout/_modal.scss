@@ -28,7 +28,7 @@
     max-width: 450px;
     max-height: 609px;
   
-    background: #ffffff;
+    background: $third-bg-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -59,13 +59,13 @@
     height: 30px;
   
     cursor: pointer;
-    background-color: $white-color;
+    background-color: $accent-color;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
   
     &:focus .modal-button__close,
     &:hover .modal-button__close {
-      fill: $theme-color;
+      fill: $white-text-color;
     }
   }
   
@@ -74,7 +74,7 @@
     top: 9px;
     right: 9px;
   
-    fill: $black-color;
+    fill: $black-text-color;
   
     transition: fill $transition;
   }
@@ -111,12 +111,12 @@
     transition: border $transition;
   
     &:focus {
-      border: 1px solid $theme-color;
+      border: 1px solid $accent-color;
       outline: none;
     }
   
     &:focus + .form-field__icon {
-      fill: $theme-color;
+      fill: $accent-color;
     }
   }
   
@@ -128,7 +128,7 @@
     line-height: 14px;
     letter-spacing: 0.01em;
   
-    color: $text-secondary;
+    color: $black-text-color;
   }
   
   .form-field__icon {
@@ -155,7 +155,7 @@
     transition: border $transition;
   
     &:focus {
-      border: 1px solid $theme-color;
+      border: 1px solid $accent-color;
       outline: none;
     }
   
@@ -168,92 +168,92 @@
     }
   }
   
-  .form-agreement {
-    position: relative;
-    margin-bottom: 30px;
-    display: flex;
-    text-align: start;
-  }
+  // .form-agreement {
+  //   position: relative;
+  //   margin-bottom: 30px;
+  //   display: flex;
+  //   text-align: start;
+  // }
   
-  .form-agreement__label {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+  // .form-agreement__label {
+  //   font-size: 14px;
+  //   line-height: 1.71;
+  //   letter-spacing: 0.03em;
   
-    color: $text-secondary;
+  //   color: $text-secondary;
   
-    @media screen and (max-width: 1199px) {
-      font-size: 12px;
-      line-height: 1.16;
-    }
-  }
+  //   @media screen and (max-width: 1199px) {
+  //     font-size: 12px;
+  //     line-height: 1.16;
+  //   }
+  // }
   
-  .form-agreement__checkbox {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  // .form-agreement__checkbox {
+  //   position: absolute;
+  //   width: 1px;
+  //   height: 1px;
+  //   margin: -1px;
+  //   border: 0;
+  //   padding: 0;
+  //   clip: rect(0 0 0 0);
+  //   overflow: hidden;
   
-    &:checked ~ .form-agreement__wrapper-icon {
-      opacity: 0;
-    }
+  //   &:checked ~ .form-agreement__wrapper-icon {
+  //     opacity: 0;
+  //   }
   
-    &:checked ~ .form-agreement__wrapper-icon--check {
-      opacity: 1;
-    }
-  }
+  //   &:checked ~ .form-agreement__wrapper-icon--check {
+  //     opacity: 1;
+  //   }
+  // }
   
-  .form-agreement__link {
-    text-decoration: underline;
+  // .form-agreement__link {
+  //   text-decoration: underline;
   
-    color: $theme-color;
-  }
+  //   color: $theme-color;
+  // }
   
-  .form-agreement__label {
-    display: flex;
-    align-items: center;
-  }
+  // .form-agreement__label {
+  //   display: flex;
+  //   align-items: center;
+  // }
   
-  .form-agreement__wrapper-icon--check {
-    cursor: pointer;
-    opacity: 0;
-  }
+  // .form-agreement__wrapper-icon--check {
+  //   cursor: pointer;
+  //   opacity: 0;
+  // }
   
-  .form-agreement__checkbox-icon {
-    margin: 0;
-    margin-right: 8px;
+  // .form-agreement__checkbox-icon {
+  //   margin: 0;
+  //   margin-right: 8px;
   
-    cursor: pointer;
-    fill: $black-color;
+  //   cursor: pointer;
+  //   fill: $black-color;
   
-    @media screen and (min-width: 1200px) {
-      margin: 5px 8px 0px 12px;
-    }
-  }
+  //   @media screen and (min-width: 1200px) {
+  //     margin: 5px 8px 0px 12px;
+  //   }
+  // }
   
-  .form-agreement__icon-check {
-    position: absolute;
-    top: 0;
-    left: 0;
+  // .form-agreement__icon-check {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
   
-    cursor: pointer;
-    fill: $white-color;
-    background-color: $theme-color;
-    border-radius: 2px;
+  //   cursor: pointer;
+  //   fill: $white-color;
+  //   background-color: $theme-color;
+  //   border-radius: 2px;
   
-    @media screen and (min-width: 320px) and (max-width: 479px) {
-      top: 5px;
-    }
+  //   @media screen and (min-width: 320px) and (max-width: 479px) {
+  //     top: 5px;
+  //   }
   
-    @media screen and (min-width: 1200px) {
-      top: 5px;
-      left: 12px;
-    }
-  }
+  //   @media screen and (min-width: 1200px) {
+  //     top: 5px;
+  //     left: 12px;
+  //   }
+  // }
   
   .form-send {
     display: flex;
@@ -270,11 +270,16 @@
     line-height: 1.87;
     letter-spacing: 0.06em;
   
-    color: $white-color;
-    background: $theme-color;
+    color: $white-text-color;
+    background: $accent-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
     border: 0;
+
+    &:focus {
+      color: $accent-color;
+      background: $white-text-color;
+    }
   }
   
