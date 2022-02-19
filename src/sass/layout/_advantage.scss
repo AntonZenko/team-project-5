@@ -15,25 +15,24 @@
         margin-top: 0;
         margin-bottom: 0;
         max-width: 480px;
-      
+    
         @media screen and (min-width: 768px) {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             padding-left: 36px;
             max-width: 768px;
-          
-         }
-         @media screen and (min-width: 1200px) {
+        
+        }
+        @media screen and (min-width: 1200px) {
             padding-left: 115px;
             padding-right: 115px;
             max-width: 1200px;
-         }
+        }
         }
     
     .advantage__blok{
         margin-bottom:  38px;
-       
         &:last-child{
         margin-bottom: 0;
         }
@@ -41,7 +40,6 @@
             margin-bottom: 0;
             max-width: 180px;
             height: 226px;
-          
     
             &:last-child{
                 margin-right: 0;
