@@ -1,5 +1,5 @@
 .about {
-  background: #FFF5F6;
+  background: #fff5f6;
   padding-bottom: 98px;
   padding-top: 121px;
   @media screen and (min-width: 768px) {
@@ -11,10 +11,10 @@
     padding-top: 125px;
   }
 }
-.container {
-  padding-left: 0px;
-  padding-right: 0px;
-}
+// .container {
+//   padding-left: 0px;
+//   padding-right: 0px;
+// }
 
 .about-subtitle {
   font-family: Titan One;
@@ -37,7 +37,7 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #D41443;
+  color: #d41443;
 }
 .about-box {
   display: flex;
@@ -50,31 +50,22 @@
   // max-height: 400px;
   margin-left: auto;
   margin-right: auto;
-  background-image: 
-    url("../images/milk-mob-1x-min.png");
+  background-image: url('../images/milk-mob-1x-min.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      background-image: 
-    url("../images/milk-mob-2x-min.png");
-    }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/milk-mob-2x-min.png');
+  }
   @media screen and (min-width: 768px) {
-    
   }
   @media screen and (min-width: 1200px) {
     max-width: 1600px;
     // max-height: 600px;
-    background-image: 
-      url("../images/milk-des-1x-min.png");
-      @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-        background-image: 
-      url("../images/milk-des-2x-min.png");
-      }
+    background-image: url('../images/milk-des-1x-min.png');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/milk-des-2x-min.png');
+    }
   }
 }
 .about-img {
@@ -82,7 +73,6 @@
   position: absolute;
 }
 .about-list {
-
   width: 463px;
   margin-left: 74px;
   display: flex;
@@ -98,13 +88,13 @@
 
 .about-list-item {
   font-family: DM Sans;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 176%;
-letter-spacing: 0.04em;
-color: #000000;
-padding-bottom: 35px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 176%;
+  letter-spacing: 0.04em;
+  color: #000000;
+  padding-bottom: 35px;
 }
 .about-text {
   font-family: DM Sans;
@@ -113,7 +103,7 @@ padding-bottom: 35px;
   font-size: 14px;
   line-height: 194%;
   letter-spacing: 0.04em;
-  color: #907E82;
+  color: #907e82;
   padding-bottom: 22px;
 }
 .about-text-quote {
@@ -123,14 +113,13 @@ padding-bottom: 35px;
   font-size: 14px;
   line-height: 194%;
   letter-spacing: 0.04em;
-  color: #907E82;
+  color: #907e82;
   padding-bottom: 45px;
-
 }
 .about-btn {
   width: 176px;
   height: 44px;
-  background: #FFFFFF;
+  background: #ffffff;
   // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0;
   border-radius: 22px;
@@ -144,9 +133,10 @@ padding-bottom: 35px;
   cursor: pointer;
   display: flex;
   padding: 10px 37px;
-  transition: background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover, &:focus {
-    background-color: #ECEBEB;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
   }
 }
 .about-btn-text {
@@ -158,6 +148,5 @@ padding-bottom: 35px;
   display: flex;
   align-items: center;
   text-align: center;
-  color: #D41443;
-  
+  color: #d41443;
 }
