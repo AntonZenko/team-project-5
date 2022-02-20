@@ -62,10 +62,15 @@
     background-color: $accent-color;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
-  
+
+    &:focus,
+    &:hover {
+      background-color: $white-text-color;
+    }
+
     &:focus .modal-button__close,
     &:hover .modal-button__close {
-      fill: $white-text-color;
+      fill: $accent-color;
     }
   }
   
@@ -74,7 +79,7 @@
     top: 9px;
     right: 9px;
   
-    fill: $black-text-color;
+    fill: $white-text-color;
   
     transition: fill $transition;
   }
