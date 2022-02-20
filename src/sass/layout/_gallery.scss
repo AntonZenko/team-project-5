@@ -1,0 +1,14 @@
+.gallery__img {
+  width: 100%;
+}
+
+.gallery {
+  background-color: #fff5f6;
+  padding-top: 97px;
+  @media screen and(min-width:768px) {
+    padding-top: 140px;
+  }
+  @media screen and(min-width:1280px) {
+    padding-top: 139px;
+  }
+}
