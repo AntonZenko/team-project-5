@@ -3,13 +3,13 @@
 }
 
 .customer-reviews__box {
-  position: relative;
   margin-top: 29px;
   padding: 43px 66px 26px 57px;
   background: #fafafa;
 }
 
 .customer-reviews__text {
+  position: relative;
   font-weight: 500;
   font-size: 12px;
   line-height: 2.58;
@@ -26,5 +26,60 @@
   font-size: 14px;
   line-height: 1.85;
   text-align: center;
-  margin-top: 52px;
+  margin-top: 18px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.wrapper__item {
+  display: flex;
+  & + & {
+    margin-left: 10px;
+  }
+}
+
+.wrapper__item--1::after {
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #c7133e;
+}
+
+.wrapper__item--2::after {
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #c7133e;
+}
+
+.wrapper__item--3::after {
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #c7133e;
+}
+
+.slick-dots {
+  transform: translateY(415px);
+  z-index: 1;
+}
+
+.slick-dots li button {
+  width: 12px;
+  height: 12px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+}
+
+.slick-dots li.slick-active button {
+  background-image: url(../images/slider-vector.svg);
+  border-radius: 0;
+  background-color: transparent;
 }
