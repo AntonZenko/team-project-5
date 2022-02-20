@@ -56,7 +56,7 @@
 <!-- Модальное окно франшизы -->
 
 <div class="backdrop is-hidden" data-modal-franchise>
-  <div class="modal">
+  <div class="modal modal-franchise">
     <button class="modal-button" data-modal-franchise-close>
       <svg class="modal-button__close" width="11" height="11">
         <use href="./images/icons.svg#icon-close"></use>
@@ -94,12 +94,33 @@
       <div class="form-field">
         <label class="form-field__label" for="text">Comments</label>
         <textarea
-          class="form-field__comment"
+          class="form-field__comment comment-franchise"
           name="text"
           id="text"
           placeholder="Enter text..."
         ></textarea>
       </div>
+
+      <div class="form-agreement">
+        <label class="form-agreement__label">
+            <input 
+            class="form-agreement__checkbox" 
+            type="checkbox" 
+            name="checkbox" 
+            value="checkbox">
+            <span class="form-agreement__wrapper-icon">
+                <svg class="form-agreement__checkbox-icon" width="16" height="15">
+                    <use href="./images/icons.svg#icon-agreement"></use>
+                </svg>
+            </span>
+            <span class="form-agreement__wrapper-icon--check">
+                <svg class="form-agreement__icon-check" width="16" height="15">
+                    <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+            </span>
+            <span>Allow sending newsallow sending news</span>
+        </label>
+      </div> 
 
       <div class="form-send">
         <button class="form-send__button" type="submit">Send</button>
