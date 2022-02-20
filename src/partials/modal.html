@@ -1,6 +1,63 @@
+<!-- Модальное окно хедер -->
+
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <button class="modal-button" data-modal-close>
+      <svg class="modal-button__close" width="11" height="11">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <form class="backdrop-form js-speaker-form">
+      <p class="backdrop-title">Please, fill the form to make an order</p>
+      <div class="form-field">
+        <label class="form-field__label" for="name">Full name</label>
+        <input class="form-field__input" type="text" name="name" id="name" />
+        <span class="form-field__icon icon-form">
+          <svg width="12" height="12">
+            <use href="./images/icons.svg#icon-person"></use>
+          </svg>
+        </span>
+      </div>
+      <div class="form-field">
+        <label class="form-field__label" for="tel">Telephone</label>
+        <input class="form-field__input" type="tel" name="tel" id="tel" />
+        <span class="form-field__icon">
+          <svg width="13" height="13">
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg>
+        </span>
+      </div>
+      <div class="form-field">
+        <label class="form-field__label" for="mail">E-mail</label>
+        <input class="form-field__input" type="email" name="mail" id="mail" />
+        <span class="form-field__icon">
+          <svg width="15" height="12">
+            <use href="./images/icons.svg#icon-email"></use>
+          </svg>
+        </span>
+      </div>
+      <div class="form-field">
+        <label class="form-field__label" for="text">Your order</label>
+        <textarea
+          class="form-field__comment"
+          name="text"
+          id="text"
+          placeholder="I would like..."
+        ></textarea>
+      </div>
+
+      <div class="form-send">
+        <button class="form-send__button" type="submit">Send</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Модальное окно франшизы -->
+
+<div class="backdrop is-hidden" data-modal-franchise>
+  <div class="modal">
+    <button class="modal-button" data-modal-franchise-close>
       <svg class="modal-button__close" width="11" height="11">
         <use href="./images/icons.svg#icon-close"></use>
       </svg>
