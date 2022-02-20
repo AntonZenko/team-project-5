@@ -1,6 +1,6 @@
 <header class="header">
   <div class="container">
-    <div class="header_container">
+    <div class="header-hero__container">
       <div class="wrap-nav">
         <a class="link logo" href="./index.html">
           <picture>
@@ -9,33 +9,47 @@
           </picture>
         </a>
 
-        <nav class="site-nav">
-          <ul class="list site-nav__list">
-            <li class="site-nav__item">
-              <a class="link site-nav__link" href="">Home</a>
+        <nav class="header-nav">
+          <ul class="list header-nav__list">
+            <li class="header-nav__item">
+              <a class="link header-nav__link header-nav__link--current" href="./index.html"
+                >Home</a
+              >
             </li>
-            <li class="site-nav__item">
-              <a class="link site-nav__link" href="">About us</a>
+            <li class="header-nav__item">
+              <a class="link header-nav__link" href="#">About us</a>
             </li>
-            <li class="site-nav__item">
-              <a class="link site-nav__link" href="">How it’s made?</a>
+            <li class="header-nav__item">
+              <a class="link header-nav__link" href="#about">How it’s made?</a>
             </li>
-            <li class="site-nav__item">
-              <a class="link site-nav__link" href="">Our products</a>
+            <li class="header-nav__item">
+              <a class="link header-nav__link" href="#products">Our products</a>
             </li>
-            <li class="site-nav__item">
-              <a class="link site-nav__link" href="">Contact</a>
+            <li class="header-nav__item">
+              <a class="link header-nav__link" href="#contacts">Contact</a>
             </li>
           </ul>
         </nav>
 
-        <button class="button menu-button" type="button" data-menu-open>
+        <button
+          class="button header-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          type="button"
+          data-menu-open
+        >
           <svg class="" width="20" height="12">
-            <use class="" href="./images/symbol-defs.svg#icon-burger"></use>
+            <use class="" href="./images/icons.svg#icon-burger"></use>
           </svg>
         </button>
 
-        <button class="button button-buy" type="button">Buy now ></button>
+        <button
+          class="button header-button animate__animated animate__heartBeat animate__infinite animate__slower"
+          data-modal-open
+          type="button"
+        >
+          Buy now >
+        </button>
       </div>
 
       <div class="wrap-title">
@@ -45,11 +59,11 @@
         </h1>
 
         <ul class="list button-title">
-          <li class="item">
-            <button class="button button-secondary" type="button">Products</button>
+          <li class="button-title__item">
+            <a class="link button-title--pink" href="#products">Products</a>
           </li>
-          <li class="item">
-            <button class="button button-primary" type="button">How it’s made?</button>
+          <li class="button-title__item">
+            <a class="link button-title--white" href="#about">How it’s made?</a>
           </li>
         </ul>
       </div>
@@ -70,26 +84,21 @@
 
       <div class="wrap-text">
         <p class="hero-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et
+          Our natural ice cream is based on the milk of Ukrainian cows. Do not miss the opportunity
+          to enjoy its taste.
         </p>
-        <picture class="arrow">
-          <source
-            srcset="./images/arrow-right_t.png 1x, ./images/arrow-right_t_2x.png 2x"
-            media="(max-width: 1279px)"
-          />
-          <source
-            srcset="./images/arrow-right_d.png 1x, ./images/arrow-right_d_2x.png 2x"
-            media="(min-width: 1280px)"
-          />
-          <img src="./images/arrow-right_d.png" alt="advertisement arrow" />
-        </picture>
+
+        <a class="link button-arrow" href="#">
+          <svg class="icon-arrow">
+            <use class="" href="./images/icons.svg#icon-arrow_right"></use>
+          </svg>
+        </a>
       </div>
 
-      <picture class="ellipse">
+      <picture class="pic-ellipse">
         <source
           srcset="./images/ellipse_m.png 1x, ./images/ellipse_m@2x.png 2x"
-          media="(max-width: 767px)"
+          media="(max-width: 480px)"
         />
         <source
           srcset="./images/ellipse.png 1x, ./images/ellipse@2x.png 2x"
@@ -99,10 +108,10 @@
           srcset="./images/ellipse_d.png 1x, ./images/ellipse_d@2x.png 2x"
           media="(min-width: 1280px)"
         />
-        <img src="./images/ellipse_m.png" alt="ice-cream picture" />
+        <img src="./images/ellipse_m.png" alt="ellipse" />
       </picture>
 
-      <picture class="pic">
+      <picture class="pic-ice-cream">
         <source
           srcset="./images/ice-cream-pic_m.png 1x, ./images/ice-cream-pic_m_2x.png 2x"
           media="(max-width: 767px)"
@@ -118,7 +127,7 @@
         <img src="./images/ice-cream-pic_d.png" alt="ice-cream picture" />
       </picture>
 
-      <picture class="milk">
+      <picture class="pic-milk animate__animated animate__fadeInLeft">
         <source
           srcset="./images/milk-pic_t.png 1x, ./images/milk-pic_t_2x.png 2x"
           media="(max-width: 1279px)"
@@ -127,10 +136,10 @@
           srcset="./images/milk-pic_d.png 1x, ./images/milk-pic_d_2x.png 2x"
           media="(min-width: 1280px)"
         />
-        <img src="./images/milk-pic_d.png" alt="ice-cream picture" />
+        <img src="./images/milk-pic_d.png" alt="milk" />
       </picture>
 
-      <picture class="girl">
+      <picture class="pic-girl">
         <source
           srcset="./images/girl-pic_t.png 1x, ./images/girl-pic_t_2x.png 2x"
           media="(max-width: 1279px)"
@@ -139,7 +148,7 @@
           srcset="./images/girl-pic_d.png 1x, ./images/girl-pic_d_2x.png 2x"
           media="(min-width: 1280px)"
         />
-        <img src="./images/girl-pic_d.png" alt="girl picture" />
+        <img src="./images/girl-pic_d.png" alt="girl" />
       </picture>
     </div>
   </div>
