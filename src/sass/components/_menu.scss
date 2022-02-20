@@ -1,19 +1,29 @@
-.menu-close {
+// .menu-close {
+//   // width: 14px;
+//   // height: 14px;
+
+//   // background: $bg-color;
+
+//   // border-radius: 50%;
+// }
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.menu-close-icon {
   width: 14px;
   height: 14px;
-
-  background: $bg-color;
-
-  border-radius: 50%;
+  fill: $white-text-color;
   position: absolute;
   right: 28px;
   top: 23px;
   cursor: pointer;
+  @media screen and (min-width: 768px) {
+    right: 34px;
+  }
 }
-
-// .menu-close-icon {
-
-// }
 
 .mob-menu {
   position: fixed;
@@ -22,6 +32,7 @@
   right: 0;
   width: 250px;
   height: 502px;
+  z-index: 1;
 
   padding-top: 60px;
   @media screen and (min-width: 768px) {
@@ -30,7 +41,7 @@
   }
 }
 
-.menu-button {
+.mob-menu-button {
   background: $bg-color;
   border-radius: 22px;
   width: 209px;
@@ -43,8 +54,26 @@
   font-size: 16px;
   line-height: 1.31;
   color: $accent-color;
+  position: relative;
+  cursor: pointer;
+  padding-left: 53px;
+  text-align: left;
   @media screen and (min-width: 768px) {
     width: 186px;
+    padding-left: 48px;
+  }
+}
+
+.mob-button-icon {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  right: 48px;
+  width: 11px;
+  height: 16px;
+  fill: $accent-color;
+  @media screen and (min-width: 768px) {
+    right: 43px;
   }
 }
 
