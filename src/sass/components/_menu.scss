@@ -31,13 +31,12 @@
   top: 0;
   right: 0;
   width: 250px;
-  height: 502px;
+  height: 100%;
   z-index: 1;
 
   padding-top: 60px;
   @media screen and (min-width: 768px) {
     width: 254px;
-    height: 100%;
   }
 }
 
@@ -79,10 +78,6 @@
 
 .menu-list {
   margin-top: 19px;
-  padding-left: 21px;
-  @media screen and (min-width: 768px) {
-    padding-left: 24px;
-  }
 }
 
 .menu-list__item {
@@ -101,4 +96,12 @@
   font-size: 14px;
   line-height: 18px;
   color: $white-text-color;
+  padding-left: 21px;
+  @media screen and (min-width: 768px) {
+    padding-left: 24px;
+  }
+}
+
+.curent {
+  color: $accent-color;
 }
