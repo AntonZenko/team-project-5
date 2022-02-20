@@ -1,0 +1,30 @@
+.customer-reviews {
+  padding-top: 80px;
+}
+
+.customer-reviews__box {
+  position: relative;
+  margin-top: 29px;
+  padding: 43px 66px 26px 57px;
+  background: #fafafa;
+}
+
+.customer-reviews__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.58;
+  text-align: center;
+  color: $black-text-color;
+}
+
+.customer-reviews__img {
+  margin: 0 auto;
+}
+
+.customer-reviews__title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.85;
+  text-align: center;
+  margin-top: 52px;
+}
