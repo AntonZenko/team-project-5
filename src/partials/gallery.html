@@ -1,20 +1,20 @@
 <section class="gallery">
-  <div class="container">
-    <h3 class="visually-hidden">Gallery</h3>
-    <picture>
-      <source
-        srcset="/images/gallery-mob-1x.jpg, /images/gallery-mob-2x.jpg"
-        media="(min-width: 1200px)"
-      />
-      <source
-        srcset="/images/gallery-tab-1x.jpg, /images/gallery-tab-2x.jpg"
-        media="(min-width: 768px)"
-      />
-      <source
-        srcset="/images/gallery-desk-1x.jpg, /images/gallery-desk-2x.jpg"
-        media="(min-width: 320px)"
-      />
-      <img src="/images/gallery-desk-1x.jpg" alt="" />
-    </picture>
-  </div>
+  <!-- <div class="container"> -->
+  <h3 class="visually-hidden">Gallery</h3>
+  <picture class="gallery__image">
+    <source
+      srcset="/images/gallery-desk-1x.jpg 1x, /images/gallery-desk-2x.jpg 2x"
+      media="(min-width: 1280px)"
+    />
+    <source
+      srcset="/images/gallery-tab-1x.jpg 1x, /images/gallery-tab-2x.jpg 2x"
+      media="(min-width: 768px)"
+    />
+    <source
+      srcset="/images/gallery-mob-1x.jpg 1x, /images/gallery-mob-2x.jpg 2x"
+      media="(min-width: 320px)"
+    />
+    <img class="gallery__img" src="/images/gallery-desk-1x.jpg" alt="gallery" />
+  </picture>
+  <!-- </div> -->
 </section>
