@@ -31,18 +31,18 @@
     background: $third-bg-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
+    border-radius: 24px;
   
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
     transition: transform $transition, box-shadow $transition, opacity $transition;
-  
+
     @media screen and (min-width: 1200px) {
       max-width: 528px;
       max-height: 581px;
     }
   }
-  
+
   .is-hidden .modal {
     transform: translate(-50%, -50%) scale(0.8);
     opacity: 0;
@@ -106,12 +106,12 @@
   
   .form-field__input {
     margin: 0;
-    padding: 11px 0px 11px 42px;
+    padding: 11px 0px 11px 32px;
   
     cursor: pointer;
   
     border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
+    border-radius: 24px;
   
     transition: border $transition;
   
@@ -140,7 +140,9 @@
   
   .form-field__icon {
     position: absolute;
-    top: 62%;
+    top: 59%;
+
+
     left: 3.5%;
   
     transition: fill $transition;
@@ -158,7 +160,7 @@
     height: 120px;
   
     border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
+    border-radius: 24px;
     transition: border $transition;
 
     &:hover,
@@ -194,7 +196,7 @@
     color: $white-text-color;
     background: $accent-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+    border-radius: 24px;
     cursor: pointer;
     border: 0;
 
@@ -204,4 +206,93 @@
       background: $white-text-color;
     }
   }
+
+  // Модальное окно франшизы 
+
+  .form-agreement {
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+    text-align: start;
+  }
   
+  .form-agreement__label {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  
+    color: $black-text-color;
+  
+    @media screen and (max-width: 1199px) {
+      font-size: 12px;
+      line-height: 1.16;
+    }
+  }
+  
+  .form-agreement__checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  
+    &:checked ~ .form-agreement__wrapper-icon {
+      opacity: 0;
+    }
+  
+    &:checked ~ .form-agreement__wrapper-icon--check {
+      opacity: 1;
+    }
+  }
+  
+  .form-agreement__label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-agreement__wrapper-icon--check {
+    cursor: pointer;
+    opacity: 0;
+  }
+  
+  .form-agreement__checkbox-icon {
+    margin: 0;
+    margin-right: 8px;
+  
+    cursor: pointer;
+    fill: $black-text-color;
+  
+    @media screen and (min-width: 1200px) {
+      margin: 5px 8px 0px 12px;
+    }
+  }
+  
+  .form-agreement__icon-check {
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    cursor: pointer;
+    fill: $white-text-color;
+    background-color: $accent-color;
+    border-radius: 2px;
+  
+    @media screen and (min-width: 320px) and (max-width: 479px) {
+      top: 5px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      top: 5px;
+      left: 12px;
+    }
+  }
+  .comment-franchise {
+    height: 100px;
+  }
+
+  .modal.modal-franchise {
+    max-width: 400px;
+  }
