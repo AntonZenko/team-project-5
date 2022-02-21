@@ -1,3 +1,7 @@
+body.modal-open {
+  overflow: hidden;
+}
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -31,7 +35,7 @@
     background: $third-bg-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 24px;
+    border-radius: 30px;
   
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
@@ -50,8 +54,8 @@
   
   .modal-button {
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: 11px;
+    right: 11px;
     margin: 0;
     padding: 0;
   
@@ -84,7 +88,7 @@
     transition: fill $transition;
   }
   
-  .backdrop-title {
+  .modal-title {
     margin-bottom: 2px;
   
     font-weight: bold;
@@ -93,7 +97,7 @@
     text-align: center;
   }
   
-  .backdrop-form {
+  .modal-form {
     padding: 40px;
   }
   
@@ -106,12 +110,12 @@
   
   .form-field__input {
     margin: 0;
-    padding: 11px 0px 11px 32px;
+    padding: 11px 0px 11px 35px;
   
     cursor: pointer;
   
     border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 24px;
+    border-radius: 30px;
   
     transition: border $transition;
   
@@ -142,7 +146,7 @@
   .form-field__icon {
     position: absolute;
     top: 59%;
-    left: 3.5%;
+    left: 15px;
   
     transition: fill $transition;
   }
@@ -154,12 +158,12 @@
   
   .form-field__comment {
     margin-bottom: 20px;
-    padding: 12px 16px;
+    padding: 12px 20px;
   
     height: 120px;
   
     border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 24px;
+    border-radius:30px;
     transition: border $transition;
 
     &:hover,
@@ -195,7 +199,7 @@
     color: $white-text-color;
     background: $accent-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 24px;
+    border-radius: 30px;
     cursor: pointer;
     border: 0;
 
@@ -209,12 +213,46 @@
 // Окно читать больше
 
 .modal-more {
+  position: absolute;
+  top: 50%;
+  left: 50%;
 
-  .backdrop-text {
+  width: 100%;
+  max-height: 609px;
+
+  background: $third-bg-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform $transition, box-shadow $transition, opacity $transition;
+
+  overflow-y: scroll;
+
+  .modal-title-more {
+    margin-bottom: 30px;
+  
+    font-family: Titan One;
+    font-size: 34px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $accent-color;
+  }
+
+  .modal-text {
     font-size: 16px;
     line-height: 1.76;
     letter-spacing: .04em;
+  }
 
+  img {
+    margin: 20px 0px;
+  
+    border: 2px solid $accent-color;
+    border-radius: 30px;
   }
 
   @media screen and (min-width: 480px) {
@@ -231,28 +269,6 @@
 
 }
 
-.modal-more img {
-  border-radius: 24px;
-
-}
-
-.modal-more .backdrop-title-more {
-
-  margin-bottom: 30px;
-
-
-
-    font-family: Titan One;
-    font-size: 34px;
-    line-height: 1.14;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: $accent-color;
-
-}
-
-
-
   // Модальное окно франшизы 
 
   .form-agreement {
@@ -268,6 +284,10 @@
     letter-spacing: 0.03em;
   
     color: $black-text-color;
+
+    @media screen and (min-width: 1200px) {
+      line-height: 1.6;
+    }
   }
   
   .form-agreement__checkbox {
