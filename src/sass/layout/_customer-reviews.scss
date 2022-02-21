@@ -1,11 +1,48 @@
 .customer-reviews {
   padding-top: 80px;
+  @media screen and(min-width:768px) {
+    padding-top: 121px;
+  }
+  @media screen and(min-width:1280px) {
+    padding-top: 123px;
+  }
 }
 
 .customer-reviews__box {
+  position: relative;
   margin-top: 29px;
   padding: 43px 66px 26px 57px;
   background: #fafafa;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 28px;
+    left: 61px;
+    width: 54px;
+    height: 40px;
+    background-image: url(../images/custom-reviews“.svg);
+    z-index: 0;
+    @media screen and(min-width:768px) {
+      top: 30px;
+      left: 40px;
+      @media screen and(min-width:1280px) {
+        top: 32px;
+        left: 50px;
+      }
+    }
+  }
+  @media screen and(min-width:768px) {
+    padding: 47px 80px 34px 80px;
+    width: 620px;
+    margin: 0 auto;
+    margin-top: 19px;
+  }
+  @media screen and(min-width:1280px) {
+    margin-top: 15px;
+    width: 926px;
+    padding: 47px 89px 39px 87px;
+    margin-bottom: 15px;
+  }
 }
 
 .customer-reviews__text {
@@ -15,6 +52,27 @@
   line-height: 2.58;
   text-align: center;
   color: $black-text-color;
+  z-index: 0;
+  background-image: repeating-linear-gradient(
+    180deg,
+    transparent,
+    transparent 30px,
+    #e1e1e1 0,
+    #e1e1e1 31px
+  );
+  @media screen and(min-width:768px) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2.14;
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
+  @media screen and(min-width:1280px) {
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
 }
 
 .customer-reviews__img {
@@ -27,6 +85,19 @@
   line-height: 1.85;
   text-align: center;
   margin-top: 18px;
+  @media screen and(min-width:768px) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    margin-top: 14px;
+  }
+  @media screen and(min-width:1280px) {
+    font-size: 20px;
+    line-height: 1.85;
+    text-align: center;
+    margin-top: 15px;
+  }
 }
 
 .wrapper {
@@ -67,8 +138,11 @@
 }
 
 .slick-dots {
-  transform: translateY(415px);
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
   z-index: 1;
+  bottom: -350px;
 }
 
 .slick-dots li button {
