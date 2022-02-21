@@ -139,9 +139,10 @@
 
 .slick-dots {
   left: 50%;
+  bottom: -250px;
   transform: translateX(-50%);
   white-space: nowrap;
-  z-index: 1;
+  z-index: 5;
   bottom: -350px;
 }
 
