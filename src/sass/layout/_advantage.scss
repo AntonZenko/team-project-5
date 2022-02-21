@@ -1,121 +1,114 @@
-*{
-    list-style: none;
+.advantage-section{
+    background-color: $secondary-bg-color;
+    padding-bottom: 97px;
+    @media screen and (min-width: 768px) {
+        padding-bottom: 140px;
     }
-   
-    .advantage-section{
-        background-color: $secondary-bg-color;
+}
+.advantage__bloks{
+    margin-top: 0;
+    margin-bottom: 0;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
-    
-    .advantage__bloks{
-        margin-top: 0;
+    }
+
+.advantage__blok{
+    margin-bottom:  38px;
+    width: 230px;
+    height: 156px;
+    &:last-child{
+    margin-bottom: 0;
+    }
+    @media screen and (min-width: 768px) {
         margin-bottom: 0;
-     
-    
-        @media screen and (min-width: 768px) {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-        }
-    
-    .advantage__blok{
-        margin-bottom:  38px;
-        width: 230px;
-        height: 156px;
+        width: 180px;
+        height: 226px;
+
         &:last-child{
-        margin-bottom: 0;
-       
-        }
-        @media screen and (min-width: 768px) {
-            margin-bottom: 0;
-            width: 180px;
-            height: 226px;
-    
-            &:last-child{
-                margin-right: 0;
-                }
-    }
-    @media screen and (min-width: 1280px) {
-        margin-bottom: 0;
-        width: 320px;
-        height: 222px;
-    }
-    }
-    .advantage__number{
-        font-family: Titan One;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 41px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    
-    color: $accent-color;
-    
-    padding-top: 16px;
-    @media screen and (min-width: 768px){
-        padding-top: 36px;
-        padding-bottom: 13px;  
-    }
-    @media screen and (min-width: 1280px){
-        padding-top: 40px;
-        padding-bottom: 15px;  
-    }
-    
-    }
-    
-    .advantage__text{
-        font-family: DM Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 1.74;
-    
-    color: #000000;
-    @media screen and (min-width: 768px){
-        padding-right: 0; 
-    }
-    
-    @media screen and (min-width: 1280px){
-        font-size: 16px;
-        line-height: 1.5;
-    }
-    }
-    
-     
-    .icon1{
-        content: "";
-       display: block;
-       width: 33px;
-        height: 50px;
+            margin-right: 0;
+            }
+}
+@media screen and (min-width: 1280px) {
+    margin-bottom: 0;
+    width: 320px;
+    height: 222px;
+}
+}
+.advantage__number{
+    font-family: Titan One;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 41px;
+letter-spacing: 0.04em;
+text-transform: uppercase;
 
-    }
-    .icon1::before{
-        content: url(../images/advantage/have-its-made-icon1.png);
-        position:relative;
-       
-    }
-    .icon2{
-        content: "";
-       display: block;
-       width: 50px;
-        height: 50px;
+color: $accent-color;
 
-    }
-    .icon2::before{
-        content: url(../images/advantage/have-its-made-icon2.png);
-        position:relative;
-       
-    }
-    .icon3{
-        content: "";
-       display: block;
-       width: 44px;
-        height: 50px;
+padding-top: 16px;
+@media screen and (min-width: 768px){
+    padding-top: 36px;
+    padding-bottom: 13px;  
+}
+@media screen and (min-width: 1280px){
+    padding-top: 40px;
+    padding-bottom: 15px;  
+}
 
-    }
-    .icon3::before{
-        content: url(../images/advantage/have-its-made-icon3.png);
-        position:relative;
-       
-    }
+}
+
+.advantage__text{
+    font-family: DM Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 1.74;
+
+color: #000000;
+@media screen and (min-width: 768px){
+    padding-right: 0; 
+}
+
+@media screen and (min-width: 1280px){
+    font-size: 16px;
+    line-height: 1.5;
+}
+}
+
+.icon1{
+    content: "";
+    display: block;
+    width: 33px;
+    height: 50px;
+
+}
+.icon1::before{
+    content: url(../images/advantage/have-its-made-icon1.png);
+    position:relative;
+}
+.icon2{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+
+}
+.icon2::before{
+    content: url(../images/advantage/have-its-made-icon2.png);
+    position:relative;
+
+}
+.icon3{
+    content: "";
+    display: block;
+    width: 44px;
+    height: 50px;
+
+}
+.icon3::before{
+    content: url(../images/advantage/have-its-made-icon3.png);
+    position:relative;
+}
