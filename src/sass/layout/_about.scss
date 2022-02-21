@@ -10,7 +10,7 @@
     padding-top: 130px;
   }
   @media screen and (min-width: 1280px) {
-    padding-bottom: 39px;
+    padding-bottom: 146px;
     padding-top: 125px;
   }
 
@@ -56,12 +56,9 @@
   }
 }
 
-// .container {
-//   padding-left: 0px;
-//   padding-right: 0px;
-// }
 
 .about-subtitle {
+  // padding-left: 59px;
   font-family: Titan One;
     font-style: normal;
     font-weight: normal;
@@ -84,8 +81,8 @@
 }
 
 .about-title {
-  padding-right: 61px;
-  padding-left: 59px;
+  // padding-right: 61px;
+  // padding-left: 59px;
   padding-bottom: 26px;
   font-family: Titan One;
   font-style: normal;
@@ -186,7 +183,7 @@
   display: flex;
   flex-direction: column;
   // margin-right: 20px;
-  margin-left: 30px;
+  margin-left: 10px;
   
   @media screen and (min-width: 768px) {
     width: 340px;
@@ -305,6 +302,7 @@
 }
 .about-icons {
   fill: #D41443;
-  margin-left: 13.62px;
+  margin-left: 12px;
+
 }
 

@@ -141,9 +141,13 @@
 }
 
 .slick-dots {
+  left: 50%;
+  bottom: -250px;
+  transform: translateX(-50%);
   white-space: nowrap;
   z-index: 1;
 }
+
 
 .slick-dots li button {
   width: 12px;

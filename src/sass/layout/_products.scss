@@ -46,7 +46,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $accent-color;
-  margin-bottom: 32px;
+  margin-bottom: 31px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 112px;
@@ -66,13 +66,14 @@
   justify-content: center;
 }
 
+.products-section-class {
+  display: flex;
+  justify-content: center;
+}
+
 .products-class {
   text-align: center;
   @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  @media screen and (min-width: 1280px) {
     display: flex;
     flex-wrap: wrap;
   }
@@ -138,42 +139,41 @@
       margin-right: 0;
     }
   }
-
-  @media screen and (min-width: 1280px) {
-    flex-basis: calc((100% - 20px) / 3);
-
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
-  }
 }
 
-// .products-item:last-child {
-//   margin-right: 0;
-// }
-
 .products-class-list::before {
+  // content: '';
+  // display: flex;
+  // margin-left: auto;
+  // margin-right: auto;
+  // position: absolute;
+  // top: -23%;
+  // left: 5%;
   content: '';
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  // width: 249px;
-  // height: 252px;
+  display: block;
   position: absolute;
-  top: -23%;
-  left: 5%;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-repeat: no-repeat;
+  background-size: 249px 252px;
+
+  width: 249px;
+  height: 252px;
 
   @media screen and (min-width: 768px) {
-    // width: 220px;
-    // height: 224px;
-    top: -21%;
-    left: 0;
+    // top: -21%;
+    // left: 0;
+    background-size: 220px 226px;
+    width: 220px;
+    height: 226px;
   }
   @media screen and (min-width: 1280px) {
-    // width: 335px;
-    // height: 335px;
-    left: -1%;
-    top: -39%;
+    background-size: 335px 335px;
+    top: -9%;
+    width: 335px;
+    height: 335px;
   }
 }
 
@@ -257,9 +257,9 @@
   }
 
   @media screen and (min-width: 1280px) {
+    padding-top: 163px;
+    margin-bottom: 32px;
   }
-  padding-top: 163px;
-  margin-bottom: 32px;
 }
 
 .products-text::before {
@@ -272,9 +272,6 @@
   margin-left: auto;
   margin-right: auto;
   background-image: url(../images/group.png);
-
-  @media screen and (min-width: 768px) {
-  }
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 32px;
@@ -329,6 +326,10 @@
     margin-bottom: 50px;
   }
 }
+
+// .products-button-left {
+//   // transform: perspective(500px) rotateY(180deg);
+// }
 
 .products-button-icon {
   fill: $accent-color;

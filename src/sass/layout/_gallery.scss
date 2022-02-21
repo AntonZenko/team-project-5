@@ -3,12 +3,15 @@
 }
 
 .gallery {
-  background-color: #fff5f6;
+  width: 100%;
+  background: linear-gradient(180deg, #fff5f6 0, #fff5f6 68%, #fff 0, #fff);
   padding-top: 97px;
   @media screen and(min-width:768px) {
     padding-top: 140px;
+    background: linear-gradient(180deg, #fff5f6 0, #fff5f6 62%, #fff 0, #fff);
   }
   @media screen and(min-width:1280px) {
     padding-top: 139px;
+    background: linear-gradient(180deg, #fff5f6 0, #fff5f6 57%, #fff 0, #fff);
   }
 }
