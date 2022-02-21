@@ -85,18 +85,21 @@
   line-height: 1.85;
   text-align: center;
   margin-top: 18px;
+  margin-bottom: 30px;
   @media screen and(min-width:768px) {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.87;
     text-align: center;
     margin-top: 14px;
+    margin-bottom: 35px;
   }
   @media screen and(min-width:1280px) {
     font-size: 20px;
     line-height: 1.85;
     text-align: center;
     margin-top: 15px;
+    margin-bottom: 35px;
   }
 }
 
@@ -138,11 +141,8 @@
 }
 
 .slick-dots {
-  left: 50%;
-  transform: translateX(-50%);
   white-space: nowrap;
   z-index: 1;
-  bottom: -350px;
 }
 
 .slick-dots li button {
