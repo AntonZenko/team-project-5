@@ -18,20 +18,17 @@
   }
   @media screen and (min-width: 1280px) {
     padding-top: 132px;
-    background-image: url('../images/sectioncontact1x.png');
-    background-image: linear-gradient(
-      ($bg-color) 24%,
-      ($secondary-bg-color) 0,
-      ($secondary-bg-color) 76%
-    );
+    background-image: url('../images/sectioncontact1x.png'),
+      linear-gradient(($bg-color) 24%, ($secondary-bg-color) 0, ($secondary-bg-color) 76%);
+    background-position: 50%;
+    background-size: 100vw;
+  }
+  @media screen and (min-width: 1280px) {
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: 
-      // linear-gradient(
-      //     ($bg-color) 24%,
-      //     ($secondary-bg-color) 0,
-      //     ($secondary-bg-color) 76%
-      //   ),
-        url('../images/sectioncontact2x.png');
+      background-image: url('../images/sectioncontact2x.png'),
+        linear-gradient(($bg-color) 24%, ($secondary-bg-color) 0, ($secondary-bg-color) 76%);
+      background-position: 50%;
+      background-size: 100vw;
     }
   }
 }
