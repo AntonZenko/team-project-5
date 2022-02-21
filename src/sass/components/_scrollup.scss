@@ -1,19 +1,16 @@
 .myBtn {
-  display: none; /* Скрыто по умолчанию */
-  position: fixed; /* Фиксированное / липкое положение */
-  bottom: 30px; /* Поместите кнопку в нижней части страницы */
-  right: 20px; /* Разместить кнопку 30 пикселей от правого */
-  z-index: 99; /* Убедитесь, что он не перекрывается */
-  cursor: pointer; /* Добавить указатель мыши при наведении */
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 99;
+  cursor: pointer;
   background: transparent;
   fill: $accent-color;
-//   opacity: 0;
   transition: transform  $transition;
 }
 
 .myBtn:hover,
 .myBtn:focus {
     transform: scale(1.5);
-//   background-color: $accent-color;
-//   fill: $black-text-color;
 }
