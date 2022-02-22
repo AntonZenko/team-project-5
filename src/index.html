@@ -31,10 +31,12 @@
     <include src="./partials/menu.html"></include>
 
     <include src="./partials/modal.html"></include>
+    <include src="./partials/mobile-modal.html"></include>
     <include src="./partials/_scrollup.html"></include>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
 
-    <script> //кнопка прокрутки
+    <!-- <script>
+      //кнопка прокрутки
       // Получить кнопку
       var mybutton = document.getElementById('myBtn');
 
@@ -56,7 +58,11 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
       }
-    </script>
+    </script> -->
+
+    <script src="./js/scroll-btn.js"></script>
+
+    <script src="./js/modal-menu.js"></script>
 
     <script src="./js/modal.js"></script>
     <script src="./js/modal-more.js"></script>
