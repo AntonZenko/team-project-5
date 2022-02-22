@@ -41,6 +41,7 @@
       var mybutton = document.getElementById('myBtn');
 
       // Когда пользователь прокручивает вниз 20px от верхней части документа, покажите кнопку
+      mybutton.addEventListener('click', topFunction);
       window.onscroll = function () {
         scrollFunction();
       };
